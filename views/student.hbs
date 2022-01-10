@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> My Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="/css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="/css/icomoon.css">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="/css/magnific-popup.css">
+
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+  <!-- Flexslider  -->
+  <link rel="stylesheet" href="/css/flexslider.css">
+
+  <!-- Pricing -->
+  <link rel="stylesheet" href="/css/pricing.css">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/student.css">
+
+  <!-- Modernizr JS -->
+  <script src="/js/modernizr-2.6.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="fh5co-loader"></div>
+
+  <div id="page">
+    <nav class="fh5co-nav" role="navigation">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-right">
+              <p class="site">www.yourdomainname.com</p>
+              <ul class="fh5co-social">
+                <li><a href="#"><i class="icon-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2">
+              <div id="fh5co-logo"><a href="/home"><i class="icon-study"></i>Educ<span>.</span></a></div>
+            </div>
+            <div class="col-xs-10 text-right menu-1">
+              <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/course">Courses</a></li>
+                <li><a href="/teacher">Teacher</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <!--<li class="btn-cta"><a href="#"><span>Buy Courses</span></a></li>-->
+                <li class="has-dropdown">
+                  <a href="#">Personal</a>
+                  <ul class="dropdown">
+                    <li><a href="/profile">My Profile</a></li>
+                    <li><a href="/becometeacher">Become A Teacher</a></li>
+                    <li><a href="/buycourse">Buy Courses</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container light-style flex-grow-1 container-p-y">
+
+      <h4 class="font-weight-bold py-3 mb-4">
+        Profile
+      </h4>
+
+      <div class="card overflow-hidden">
+        <div class="row no-gutters row-bordered row-border-light">
+          <div class="col-md-3 pt-0">
+            <div class="list-group list-group-flush account-settings-links">
+              <a class="list-group-item list-group-item-action active" data-toggle="list"
+                href="#account-general">General</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list"
+                href="#account-change-password">Change password</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane fade active show" id="account-general">
+                <div class="card-body media align-items-center">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
+                  <div class="media-body ml-4">
+                    <label class="btn btn-outline-primary">
+                      Upload Avatar
+                      <input type="file" class="account-settings-fileinput">
+                    </label> &nbsp;
+                    <!--<button type="button" class="btn btn-default md-btn-flat">Reset</button>-->
+
+                    <div class="text-light small mt-1">Allowed JPG or PNG.</div>
+                  </div>
+                </div>
+                <hr class="border-light m-0">
+                <div class="card-body">
+                  <form action="#" method="POST">
+                    <div class="form-group">
+                      <label class="form-label">Name</label>
+                      <input type="text" class="form-control" value="{{user.name}}">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">E-mail</label>
+                      <input type="text" class="form-control mb-1" value="">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Birthday</label>
+                      <input type="date" class="form-control" id="birthday" name="birthday">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Gender</label>
+                      <select class="custom-select" name="gender">
+                        <option>Rather Not Say</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Phone</label>
+                      <input type="text" class="form-control" value="">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Country</label>
+                      <input type="text" class="form-control" value="">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">My Level</label>
+                      <select class="custom-select" name="level">
+                        <option>Beginner</option>
+                        <option>Higher Beginner</option>
+                        <option>Pre-Intermediate</option>
+                        <option>Intermediate</option>
+                        <option>Upper-Intermediate</option>
+                        <option>Advanced</option>
+                        <option>Proficiency</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Want To Learn</label>
+                      <input type="text" class="form-control" value="">
+                    </div>
+                    <div class="text-right mt-3">
+                      <button type="button" class="btn btn-primary">Save Changes</button>&nbsp;
+                      <button type="button" class="btn btn-default">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="account-change-password">
+                <div class="card-body pb-2">
+                  <form action="#" method="POST">
+                    <div class="form-group">
+                      <label class="form-label">Current Password</label>
+                      <input type="password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label">New Password</label>
+                      <input type="password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label">Repeat New Password</label>
+                      <input type="password" class="form-control">
+                    </div>
+                    <div class="text-right mt-3">
+                      <button type="button" class="btn btn-primary">Save Changes</button>&nbsp;
+                      <button type="button" class="btn btn-default">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row copyright">
+          <div class="col-md-12 text-center">
+            <p>
+              <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
+              <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo
+                Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a
+                  href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+  </div>
+
+  <!-- jQuery -->
+  <script src="/js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="/js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <!-- Stellar Parallax -->
+  <script src="/js/jquery.stellar.min.js"></script>
+  <!-- Carousel -->
+  <script src="/js/owl.carousel.min.js"></script>
+  <!-- Flexslider -->
+  <script src="/js/jquery.flexslider-min.js"></script>
+  <!-- countTo -->
+  <script src="/js/jquery.countTo.js"></script>
+  <!-- Count Down -->
+  <script src="/js/simplyCountdown.js"></script>
+  <!-- Main -->
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
